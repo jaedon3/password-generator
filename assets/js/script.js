@@ -29,7 +29,7 @@ var masterArray = []
         console.log(getLowercase);
 
         if (getLowercase) {
-            masterArray = []
+            masterArray = [masterArray.concat(lowercaseArray)]
         }
 
     // function to ask if they want uppercase letters
@@ -37,7 +37,7 @@ var masterArray = []
         console.log(getUppercase);
 
         if (getUppercase) {
-            masterArray = []
+            masterArray = [masterArray.concat(uppercaseArray)]
         }
 
     // function to ask if they want to use special characters
@@ -45,7 +45,7 @@ var masterArray = []
         console.log(getSpecial);
 
         if (getSpecial) {
-            masterArray = []
+            masterArray = [masterArray.concat(specialArray)]
         }
 
     // function to ask if they want to use numbers
@@ -53,8 +53,10 @@ var masterArray = []
         console.log(getNumbers);
 
         if (getNumbers) {
-            masterArray = []
+            masterArray = [masterArray.concat(numberArray)]
         }
+
+        console.log(masterArray);
         
 }
 
